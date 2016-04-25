@@ -14,5 +14,6 @@ public class Aqd {
 		AqdConfigService aqdConfigService = new AqdConfigService(context);
 		aqdConfigService.writeKEY(AqdKeyService.encryptKey(key));
 		aqdConfigService.writeURL(url);
+		AqdHttpRequester.setBaseUrl(url);
 	}
 }

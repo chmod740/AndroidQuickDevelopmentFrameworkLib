@@ -5,7 +5,6 @@ public class AqdSimpleKVModel {
 	private String value;
 	
 	public AqdSimpleKVModel() {
-		// TODO Auto-generated constructor stub
 		key = null;
 		value = null;
 	}

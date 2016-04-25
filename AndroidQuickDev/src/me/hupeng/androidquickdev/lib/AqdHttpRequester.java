@@ -8,11 +8,16 @@ import com.loopj.android.http.RequestParams;
 
 public class AqdHttpRequester {
 	/**
-     * 服务器地,端口号与应用名组成的基本的URL
+     * 服务器地址,端口号与应用名组成的基本的URL
      * */
-    private static final String BASE_URL = "";
+    private static String BASE_URL = null;
     private static AsyncHttpClient client = new AsyncHttpClient();
-
+    
+    public static void setBaseUrl(String baseUrl){
+    	BASE_URL = baseUrl;
+    }
+    
+    
     /**
      * 发送get请求的方法<br/>
      * @param context 上下文
